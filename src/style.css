@@ -1,0 +1,68 @@
+:root {
+  /* Brand colors from music-manager-frontend */
+  --color-pink: #e4198d;
+  --color-purple: #a93097;
+  --color-blue: #2f60ab;
+  --color-cyan: #3ba5d5;
+
+  /* PrimeVue primary overrides (cyan) */
+  --p-primary-50: #e8f3f9;
+  --p-primary-100: #c1e1f0;
+  --p-primary-200: #96cde6;
+  --p-primary-300: #6bb9dc;
+  --p-primary-400: #4baad4;
+  --p-primary-500: #3ba5d5;
+  --p-primary-600: #3597c5;
+  --p-primary-700: #2d84b0;
+  --p-primary-800: #26729b;
+  --p-primary-900: #1a5378;
+
+  /* Dark theme backgrounds */
+  --bg-primary: #0f1419;
+  --bg-secondary: #1a1f2e;
+  --bg-tertiary: #252b3b;
+  --bg-hover: #2d3548;
+
+  /* Borders */
+  --border-primary: #3a4556;
+  --border-secondary: #4a5568;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: #f3f4f6;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* Scrollbar matching music-manager-frontend */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-secondary);
+}
