@@ -27,6 +27,8 @@ export default defineConfig(({ mode }) => {
       cssCodeSplit: false,
     },
     server: {
+      port: parseInt(env.PORT || '4704'),
+      strictPort: true,
       proxy: {
         '/api': {
           target: plexUrl,
