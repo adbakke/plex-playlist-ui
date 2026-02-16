@@ -6,7 +6,7 @@ import { cors } from 'hono/cors';
 
 const PLEX_URL = (process.env.PLEX_URL || 'http://localhost:32400').replace(/\/$/, '');
 const PLEX_TOKEN = process.env.PLEX_TOKEN;
-const PORT = parseInt(process.env.PORT || '3002', 10);
+const PORT = parseInt(process.env.PORT || '4704', 10);
 
 const app = new Hono();
 

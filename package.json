@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build && vite preview --port 4704 --strictPort",
+    "dev:vite": "vite",
     "build": "vite build",
     "web": "vite build && node server.js",
-    "preview": "vite preview",
+    "preview": "vite preview --port 4704",
     "start": "node server.js"
   },
   "dependencies": {

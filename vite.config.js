@@ -29,6 +29,7 @@ export default defineConfig(({ mode }) => {
     server: {
       port: parseInt(env.PORT || '4704'),
       strictPort: true,
+      cors: true, // Enable CORS for module federation (host on different port)
       proxy: {
         '/api': {
           target: plexUrl,
